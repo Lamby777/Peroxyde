@@ -1,0 +1,78 @@
+body {
+	background-image: linear-gradient(black, rebeccapurple);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+body > * {
+	margin: 0.5em auto;
+}
+
+.title {
+	font-weight: 700;
+	font-family: 'Cinzel', serif;
+	margin: 0 auto;
+	font-size: 5vw;
+	color: #ccffff;
+	text-shadow: 3px 3px 0 #006666;
+}
+
+.fancy {
+	font-size: 2em;
+	margin: 0 auto;
+}
+
+.shadowed {
+	text-shadow: 4px 4px 8px seashell;
+}
+
+.subtitle {
+	font-size: 4em;
+}
+
+.cursive {
+	font-family: 'Tangerine', cursive, serif;
+}
+
+div.text > * {
+	font-family: 'Times New Roman', serif;
+	text-indent: 2em;
+}
+
+div.text {
+	margin: 2em;
+	text-align: initial;
+	font-size: 3vh;
+	font-weight: 500;
+}
+
+div.isolated {
+	display: inline-block;
+	background-color: orange;
+	border-color: darkorange;
+	border-radius: 15%;
+	border-width: 6px;
+	border-style: outset;
+	padding: 2% 5%;
+}
+
+form input[type=text], form input[type=url] {
+	border-radius: 25%;
+	border-color: darkslategray;
+	background-color: lightpink;
+}
+
+form input[type=submit] {
+	margin: 15% 0% 5% 0%;
+	border-radius: 35%;
+	background-color: white;
+	border-color: azure;
+}
+
+input:invalid:focus {
+	background-color: lightcoral;
+}
