@@ -19,18 +19,10 @@ function TransformStream(mods) {
 
 function pipeToMod(piper, url) {
 	let mod = new TransformStream(function(chunk, _, callback) {
-		//console.log(chunk);
-		/*let match, rehref = /href="[^"]+"/ig, resrc = /src="[^"]+"/ig;
+		console.log(chunk);
+		//let resrc = /src="[^"]+"/ig;
 		let tsc = chunk.toString();
-		while ((match = rehref.exec(tsc)) != null) {
-			tsc = tsc.replace(rehref, "href='peroxyde.dexie.codes/?s=" + url +
-			split(tsc, match.index+4, match.index) + "'");
-			callback(null, chunk);
-		}
-		while ((match = resrc.exec(tsc)) != null) {
-			tsc = tsc.replace()
-		}*/
-		callback(null, chunk);
+		callback(null, chunk.replace(/bruh/g));
 	});
 	return piper.pipe(mod);
 }
